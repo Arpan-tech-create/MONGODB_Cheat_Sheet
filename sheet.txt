@@ -1,0 +1,118 @@
+------------------>>>mongodb commands<<<<<<<<<<----------------------
+
+1. create database :
+
+use new     here, new is my database name
+
+2. show all databases :
+
+show dbs
+
+
+3. to know current working database :
+
+db
+
+
+4. for dropping(Delete) database :
+
+db.dropDatabase()
+
+
+5. for creating new collections in database :
+
+db.createCollection('first')
+
+
+6. to know all collections in database :
+
+show collections
+
+7. for dropping collection in database:
+
+db.first.drop()
+
+
+8. for adding rows in collections : (Entering Data)
+
+db.first.insert({'Name':'Arpan','lang':'python','course':1})
+
+-->>above command is used for inerting only one data at a time.
+
+9. for adding multiple rows in colections:
+
+db.first.insertMany([{'Name':'Arpan','lang':'python','course':1},
+
+
+                    {'Name':'rahul','lang':'C++','course':7},
+                    {'Name':'ramesh','lang':'javscript','course':5},
+                    {'Name':'suresh','lang':'html','course':4},
+                    ])
+
+10. for showing data in mongodb :
+
+db.first.find()
+
+
+11. for showing data in pretty way...
+
+db.first.find().pretty()
+
+
+----mongodb does not follow schema---- so for that, we will see the query..............
+
+
+12. search data :
+
+db.first.find({'lang':'html'})
+
+
+13. limit function:
+db.first.find({'lang':'HTML'}).limit(2)
+{ "_id" : ObjectId("61dceef13e95fb90ea370c30"), "Name" : "Rahul", "lang" : "HTML", "course" : 3 }
+{ "_id" : ObjectId("61dd4b3d9fbab737a5bd4750"), "Name" : "patel", "lang" : "HTML", "course" : 7, "date" : ISODate("2022-01-11T09:17:49.125Z") }
+
+
+14. count fucntion :
+
+db.first.find({'lang':'HTML'}).limit(2).count()
+
+it gives me 2.
+
+
+15.Query 
+
+ db.first.find({'lang':'HTML'}).count()
+2
+
+
+
+16.sort method :
+#increase
+db.first.find().sort({'course':1}).pretty()   -- sort data bases on course number.
+
+
+
+17. sort method
+
+#decrease
+db.first.find().sort({'course':-1}).pretty()
+
+
+18. findone method :
+
+db.first.findOne({'lang':'HTML'})
+{
+        "_id" : ObjectId("61dceef13e95fb90ea370c30"),
+        "Name" : "Rahul",
+        "lang" : "HTML",
+        "course" : 3
+}
+
+
+19 . update :
+
+db.first.update({'Name':'Arpan'},{'Name':'Arpan','lang':'python','course':10})
+
+
+20 . 
