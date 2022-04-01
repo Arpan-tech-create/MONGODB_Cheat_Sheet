@@ -73,7 +73,7 @@ db.first.find({'lang':'HTML'}).limit(2)
 { "_id" : ObjectId("61dd4b3d9fbab737a5bd4750"), "Name" : "patel", "lang" : "HTML", "course" : 7, "date" : ISODate("2022-01-11T09:17:49.125Z") }
 
 
-14. count fucntion :
+14. count function :
 
 db.first.find({'lang':'HTML'}).limit(2).count()
 
@@ -115,4 +115,4 @@ db.first.findOne({'lang':'HTML'})
 db.first.update({'Name':'Arpan'},{'Name':'Arpan','lang':'python','course':10})
 
 
-20 . 
+20 .  
