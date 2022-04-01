@@ -115,4 +115,3 @@ db.first.findOne({'lang':'HTML'})
 db.first.update({'Name':'Arpan'},{'Name':'Arpan','lang':'python','course':10})
 
 
-20 .  
