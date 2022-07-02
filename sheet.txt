@@ -128,6 +128,7 @@ db.banks.deleteMany({id:{$in: [3,5]} })
 
 delete all the data Which HAs id 3 & 5 .
 
+id=column name
 
 
 
