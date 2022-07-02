@@ -115,3 +115,17 @@ db.first.findOne({'lang':'HTML'})
 db.first.update({'Name':'Arpan'},{'Name':'Arpan','lang':'python','course':10})
 
 
+20 . Delete only one data : 
+
+db.first.deleteOne({'Name':'Arpan'})
+
+--> it will delete only one Data or Document from database.
+
+21.  Delete multiple data :
+
+
+db.banks.deleteMany({id:{$in: [3,5]} })
+
+delete all the data Which HAs id 3 & 5 .
+
+
