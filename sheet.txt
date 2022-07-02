@@ -75,7 +75,7 @@ db.first.find({'lang':'HTML'}).limit(2)
 
 14. count function :
 
-db.first.find({'lang':'HTML'}).limit(2).count()
+db.first.find({'lang':'HTML'}).limit(2)
 
 it gives me 2.
 
@@ -127,5 +127,8 @@ db.first.deleteOne({'Name':'Arpan'})
 db.banks.deleteMany({id:{$in: [3,5]} })
 
 delete all the data Which HAs id 3 & 5 .
+
+
+
 
 
